@@ -7,9 +7,15 @@ class GerenciadorTarefasRedis:
         self.redis_db = redis.StrictRedis(host='localhost', port=6379, db=0, decode_responses=True)
 
     def adicionar_tarefa(self, descricao):
-        task_id = str(len(self.redis_db.keys()) + 1)
-        self.redis_db.set(task_id, descricao)
-        return task_id
+        tarefa_ids = [int(key) for key in self.redis_db.keys()]
+        if tarefa_ids:
+            id_tarefa = str(max(tarefa_ids) + 1)
+        else:
+            id_tarefa = '1'
+        
+        self.redis_db.set(id_tarefa, descricao)
+        return id_tarefa
+
 
     def listar_tarefas(self):
         tasks = []
