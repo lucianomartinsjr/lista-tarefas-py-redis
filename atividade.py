@@ -146,6 +146,7 @@ class Interface:
             messagebox.showinfo("Tarefa Removida", "Tarefa removida com sucesso.")
         else:
             messagebox.showerror("Tarefa não encontrada", "A tarefa com o ID fornecido não foi encontrada.")
+        self.menu()
     
     def exibir_tarefas(self):
         tarefas = self.gerenciador.listar_tarefas()
