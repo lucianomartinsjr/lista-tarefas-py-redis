@@ -2,6 +2,15 @@
 
 Este é um programa Python que implementa um simples gerenciador de tarefas utilizando a biblioteca Redis para armazenamento e a biblioteca Tkinter para a interface gráfica. O programa permite adicionar, listar e remover tarefas, utilizando um banco de dados Redis como backend.
 
+![image](https://github.com/lucianomartinsjr/lista-tarefas-py-redis/assets/78613684/e59f5d63-d695-4205-b0f3-4689fcbb498d)
+![image](https://github.com/lucianomartinsjr/lista-tarefas-py-redis/assets/78613684/fa0385ce-c783-43f7-bc08-84b52a5514f2)
+![image](https://github.com/lucianomartinsjr/lista-tarefas-py-redis/assets/78613684/011e4c61-fe09-4c4e-815f-8dc5aaaaedff)
+![image](https://github.com/lucianomartinsjr/lista-tarefas-py-redis/assets/78613684/af7ebd15-7cac-49f1-847b-05c850b3f9c5)
+
+
+
+
+
 ## Pré-requisitos
 
 Antes de executar o programa, você deve ter o Redis instalado e em execução em seu sistema. Certifique-se de que a biblioteca `redis` também esteja instalada. Você pode instalá-la usando o seguinte comando:
